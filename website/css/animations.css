@@ -1,0 +1,650 @@
+/* ===================================
+   Grace Coll Portfolio - Animations
+   Enhanced Float & Reveal Effects
+   =================================== */
+
+/* ===================================
+   Base Float Animation Classes
+   =================================== */
+.float-in {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.float-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.float-in-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.float-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.float-in-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.float-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.float-in-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.float-in-scale.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Staggered delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+.delay-6 { transition-delay: 0.6s; }
+.delay-7 { transition-delay: 0.7s; }
+.delay-8 { transition-delay: 0.8s; }
+
+/* ===================================
+   Hero Section Animations
+   =================================== */
+.hero__subtitle {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: floatUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 1.5s forwards;
+}
+
+.hero__description {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: floatUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 1.8s forwards;
+}
+
+.hero__buttons {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: floatUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 2.1s forwards;
+}
+
+.hero__image {
+    opacity: 0;
+    transform: translateX(60px) scale(0.95);
+    animation: floatInRight 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+
+.hero__image-decoration {
+    opacity: 0;
+    transform: translate(20px, 20px);
+    animation: floatInDecoration 1s cubic-bezier(0.4, 0, 0.2, 1) 1s forwards;
+}
+
+@keyframes floatUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes floatInDecoration {
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+/* ===================================
+   Section Headers Float In
+   =================================== */
+.section__header {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section__header.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===================================
+   Portfolio Section Animations
+   =================================== */
+.portfolio__filters {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+}
+
+.portfolio__filters.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio__card {
+    opacity: 0;
+    transform: translateY(50px) scale(0.98);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s ease;
+}
+
+.portfolio__card.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.portfolio__card:nth-child(1) { transition-delay: 0.1s; }
+.portfolio__card:nth-child(2) { transition-delay: 0.2s; }
+.portfolio__card:nth-child(3) { transition-delay: 0.3s; }
+.portfolio__card:nth-child(4) { transition-delay: 0.4s; }
+.portfolio__card:nth-child(5) { transition-delay: 0.5s; }
+.portfolio__card:nth-child(6) { transition-delay: 0.6s; }
+
+/* Card hover lift effect */
+.portfolio__card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(44, 65, 114, 0.15);
+}
+
+/* Filter button animations */
+.filter-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ===================================
+   About Section Animations
+   =================================== */
+.about__text {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about__text.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about__recognition {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+}
+
+.about__recognition.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.testimonial {
+    position: relative;
+}
+
+.testimonial::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-family: var(--font-heading);
+    font-size: 80px;
+    color: var(--color-primary);
+    opacity: 0.15;
+    line-height: 1;
+}
+
+/* ===================================
+   Timeline Animations
+   =================================== */
+.about__timeline {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about__timeline.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline__item {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline__item.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.timeline__item:nth-child(1) { transition-delay: 0.1s; }
+.timeline__item:nth-child(2) { transition-delay: 0.25s; }
+.timeline__item:nth-child(3) { transition-delay: 0.4s; }
+.timeline__item:nth-child(4) { transition-delay: 0.55s; }
+
+/* Timeline marker pulse */
+.timeline__marker {
+    position: relative;
+}
+
+.timeline__marker::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--color-primary);
+    opacity: 0;
+    animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* ===================================
+   Skills Section Animations
+   =================================== */
+.about__skills {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about__skills.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skills__category {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skills__category.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skills__category:nth-child(1) { transition-delay: 0.1s; }
+.skills__category:nth-child(2) { transition-delay: 0.25s; }
+.skills__category:nth-child(3) { transition-delay: 0.4s; }
+
+.skill__progress {
+    width: 0;
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.3s;
+}
+
+/* ===================================
+   Credentials Animations
+   =================================== */
+.about__credentials {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about__credentials.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.credential {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.credential.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.credential:nth-child(1) { transition-delay: 0.1s; }
+.credential:nth-child(2) { transition-delay: 0.25s; }
+.credential:nth-child(3) { transition-delay: 0.4s; }
+
+/* Credential hover effect */
+.credential:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* Icon gentle float animation */
+.credential__icon {
+    animation: gentleFloat 4s ease-in-out infinite;
+}
+
+.credential:nth-child(1) .credential__icon { animation-delay: 0s; }
+.credential:nth-child(2) .credential__icon { animation-delay: 1.3s; }
+.credential:nth-child(3) .credential__icon { animation-delay: 2.6s; }
+
+@keyframes gentleFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* ===================================
+   Contact Section Animations
+   =================================== */
+.contact__info {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__info.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contact__form {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+}
+
+.contact__form.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contact__item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact__item:nth-child(1) { transition-delay: 0.1s; }
+.contact__item:nth-child(2) { transition-delay: 0.2s; }
+.contact__item:nth-child(3) { transition-delay: 0.3s; }
+
+/* Contact icon hover */
+.contact__icon {
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact__item:hover .contact__icon {
+    transform: scale(1.1);
+    background: var(--color-primary);
+    color: white;
+}
+
+/* ===================================
+   Button Animations
+   =================================== */
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s ease;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(45, 105, 239, 0.3);
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+/* ===================================
+   Form Animations
+   =================================== */
+.form__group {
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__group.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.form__group:nth-child(1) { transition-delay: 0.1s; }
+.form__group:nth-child(2) { transition-delay: 0.2s; }
+.form__group:nth-child(3) { transition-delay: 0.3s; }
+.form__group:nth-child(4) { transition-delay: 0.4s; }
+
+.form__input,
+.form__textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(45, 105, 239, 0.15);
+}
+
+/* ===================================
+   Footer Animations
+   =================================== */
+.footer__social-link {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                background 0.3s ease;
+}
+
+.footer__social-link:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* ===================================
+   Scroll Arrow Animation
+   =================================== */
+.scroll-arrow {
+    animation: arrowBounce 2s ease-in-out infinite;
+}
+
+@keyframes arrowBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+}
+
+/* ===================================
+   Modal Animations
+   =================================== */
+.modal__overlay {
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal.active .modal__overlay {
+    opacity: 1;
+}
+
+.modal__content {
+    transform: translateY(50px) scale(0.9);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal.active .modal__content {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+/* ===================================
+   Nav Link Animations
+   =================================== */
+.nav__link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav__link::after {
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===================================
+   Loading Spinner
+   =================================== */
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===================================
+   Page Load Animation
+   =================================== */
+body {
+    animation: pageLoad 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ===================================
+   Reduced Motion Preference
+   =================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .float-in,
+    .float-in-left,
+    .float-in-right,
+    .float-in-scale,
+    .section__header,
+    .portfolio__filters,
+    .portfolio__card,
+    .about__text,
+    .about__recognition,
+    .about__timeline,
+    .about__skills,
+    .about__credentials,
+    .timeline__item,
+    .skills__category,
+    .credential,
+    .contact__info,
+    .contact__form,
+    .contact__item,
+    .form__group,
+    .hero__subtitle,
+    .hero__description,
+    .hero__buttons,
+    .hero__image {
+        opacity: 1;
+        transform: none;
+    }
+
+    .timeline__marker::after,
+    .credential__icon {
+        animation: none;
+    }
+}
