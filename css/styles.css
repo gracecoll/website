@@ -425,6 +425,7 @@ button {
 
 .hero__content {
     max-width: 560px;
+    padding: var(--space-2xl);
 }
 
 .hero__greeting {
@@ -488,6 +489,8 @@ button {
 
 .subtitle-item {
     white-space: nowrap;
+    color: var(--color-secondary);
+    font-weight: 500;
 }
 
 .subtitle-divider {
