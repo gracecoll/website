@@ -309,6 +309,12 @@ button {
 .logo-image {
     height: 40px;
     width: auto;
+    margin-left: 1px;
+    transition: transform var(--transition-base);
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
 }
 
 .nav__menu {
@@ -494,7 +500,7 @@ button {
 
 .subtitle-item {
     white-space: nowrap;
-    color: var(--color-secondary);
+    color: var(--color-primary);
     font-weight: 500;
 }
 
