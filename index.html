@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grace Coll - MSW Student, Tech Ethicist, Digital Media Designer, and Instructional Designer based in Boston.">
+    <meta name="keywords" content="Grace Coll, UX Design, Instructional Design, Tech Ethics, Social Work, Portfolio">
+    <meta name="author" content="Grace Coll">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Grace Coll | Portfolio">
+    <meta property="og:description" content="MSW Student | Tech Ethicist | Digital Media Designer | Instructional Designer">
+
+    <title>Grace Coll | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav" aria-label="Main navigation">
+                <a href="#home" class="nav__logo">
+                    <span class="logo-text">GC</span>
+                </a>
+                <ul class="nav__menu" id="nav-menu" role="menubar">
+                <li class="nav__item" role="none">
+                    <a href="#home" class="nav__link active" role="menuitem">Home</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#portfolio" class="nav__link" role="menuitem">Portfolio</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#about" class="nav__link" role="menuitem">About</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#contact" class="nav__link" role="menuitem">Contact</a>
+                </li>
+            </ul>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title hero__title--handwritten">
+                        <span class="typewriter">Hi, I'm Grace Coll</span>
+                    </h1>
+                    <p class="hero__subtitle fade-in delay-2">
+                        <span class="subtitle-item">MSW Student</span>
+                        <span class="subtitle-divider">|</span>
+                        <span class="subtitle-item">Tech Ethicist</span>
+                        <span class="subtitle-divider">|</span>
+                        <span class="subtitle-item">Digital Media Designer</span>
+                        <span class="subtitle-divider">|</span>
+                        <span class="subtitle-item">Instructional Designer</span>
+                    </p>
+                    <p class="hero__description fade-in delay-3">
+                        I live in the Boston Area, where I am pursuing my MSW degree at Boston College.
+                        I also have background experiences in customer success, instructional design,
+                        and UX research/design.
+                    </p>
+                    <div class="hero__buttons fade-in delay-4">
+                        <a href="#portfolio" class="btn btn--primary">View My Work</a>
+                        <a href="#contact" class="btn btn--outline">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero__image fade-in delay-2">
+                    <div class="hero__image-wrapper">
+                        <img src="assets/headshot.png" alt="Grace Coll - Professional headshot" class="hero__photo">
+                        <div class="hero__image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator">
+                <a href="#portfolio" class="scroll-down" aria-label="Scroll to portfolio">
+                    <svg class="scroll-arrow" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">My Work</span>
+                    <h2 class="section__title">Portfolio</h2>
+                    <p class="section__description">
+                        A collection of my UX design, instructional design, and tech ethics projects.
+                    </p>
+                </div>
+
+                <div class="portfolio__filters" role="tablist" aria-label="Portfolio filter">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+                    <button class="filter-btn" data-filter="ux" role="tab" aria-selected="false">UX Design</button>
+                    <button class="filter-btn" data-filter="instructional" role="tab" aria-selected="false">Instructional Design</button>
+                    <button class="filter-btn" data-filter="ethics" role="tab" aria-selected="false">Tech Ethics</button>
+                </div>
+
+                <div class="portfolio__grid" role="tabpanel">
+                    <article class="portfolio__card" data-category="ux">
+                        <div class="portfolio__card-image">
+                            <img src="https://placehold.co/800x500/2d69ef/ffffff?text=Mobile+App+Redesign" alt="Mobile app redesign project showcase" loading="lazy">
+                            <div class="portfolio__card-overlay">
+                                <a href="#" class="btn btn--small btn--light" data-project="1">View Case Study</a>
+                            </div>
+                        </div>
+                        <div class="portfolio__card-content">
+                            <span class="portfolio__card-category">UX Design</span>
+                            <h3 class="portfolio__card-title">Mobile App Redesign</h3>
+                            <p class="portfolio__card-description">
+                                End-to-end UX design project from the Google UX Certificate program,
+                                focusing on accessibility and user-centered design principles.
+                            </p>
+                            <div class="portfolio__card-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">User Research</span>
+                                <span class="tag">Prototyping</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio__card" data-category="instructional">
+                        <div class="portfolio__card-image">
+                            <img src="https://placehold.co/800x500/8f3687/ffffff?text=Learning+Database" alt="Bay Cove Learning Database project" loading="lazy">
+                            <div class="portfolio__card-overlay">
+                                <a href="#" class="btn btn--small btn--light" data-project="2">View Case Study</a>
+                            </div>
+                        </div>
+                        <div class="portfolio__card-content">
+                            <span class="portfolio__card-category">Instructional Design</span>
+                            <h3 class="portfolio__card-title">Bay Cove Learning Database</h3>
+                            <p class="portfolio__card-description">
+                                Designed and developed a comprehensive learning management database
+                                to streamline employee training and professional development.
+                            </p>
+                            <div class="portfolio__card-tags">
+                                <span class="tag">LMS Design</span>
+                                <span class="tag">Training</span>
+                                <span class="tag">Database</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio__card" data-category="instructional">
+                        <div class="portfolio__card-image">
+                            <img src="https://placehold.co/800x500/ff6c6c/ffffff?text=Mentorship+Program" alt="Mentorship Program Design" loading="lazy">
+                            <div class="portfolio__card-overlay">
+                                <a href="#" class="btn btn--small btn--light" data-project="3">View Case Study</a>
+                            </div>
+                        </div>
+                        <div class="portfolio__card-content">
+                            <span class="portfolio__card-category">Instructional Design</span>
+                            <h3 class="portfolio__card-title">Mentorship Program</h3>
+                            <p class="portfolio__card-description">
+                                Created a structured mentorship program with curriculum design,
+                                training materials, and assessment frameworks.
+                            </p>
+                            <div class="portfolio__card-tags">
+                                <span class="tag">Curriculum Design</span>
+                                <span class="tag">Mentorship</span>
+                                <span class="tag">Assessment</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio__card" data-category="ux">
+                        <div class="portfolio__card-image">
+                            <img src="https://placehold.co/800x500/2c4172/ffffff?text=Responsive+Web+Design" alt="Responsive Web Design project" loading="lazy">
+                            <div class="portfolio__card-overlay">
+                                <a href="#" class="btn btn--small btn--light" data-project="4">View Case Study</a>
+                            </div>
+                        </div>
+                        <div class="portfolio__card-content">
+                            <span class="portfolio__card-category">UX Design</span>
+                            <h3 class="portfolio__card-title">Responsive Web Design</h3>
+                            <p class="portfolio__card-description">
+                                A comprehensive responsive web design project demonstrating
+                                mobile-first design principles and cross-platform consistency.
+                            </p>
+                            <div class="portfolio__card-tags">
+                                <span class="tag">Responsive</span>
+                                <span class="tag">Web Design</span>
+                                <span class="tag">Adobe XD</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio__card" data-category="ethics">
+                        <div class="portfolio__card-image">
+                            <img src="https://placehold.co/800x500/dae12f/2c4172?text=Digital+Wellbeing" alt="Tech Ethics Research" loading="lazy">
+                            <div class="portfolio__card-overlay">
+                                <a href="#" class="btn btn--small btn--light" data-project="5">View Case Study</a>
+                            </div>
+                        </div>
+                        <div class="portfolio__card-content">
+                            <span class="portfolio__card-category">Tech Ethics</span>
+                            <h3 class="portfolio__card-title">Digital Wellbeing Research</h3>
+                            <p class="portfolio__card-description">
+                                Research and writing on the intersection of technology,
+                                mental health, and ethical design practices.
+                            </p>
+                            <div class="portfolio__card-tags">
+                                <span class="tag">Research</span>
+                                <span class="tag">Writing</span>
+                                <span class="tag">Ethics</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio__card" data-category="ux">
+                        <div class="portfolio__card-image">
+                            <img src="https://placehold.co/800x500/8f3687/ffffff?text=User+Research" alt="User Research Case Study" loading="lazy">
+                            <div class="portfolio__card-overlay">
+                                <a href="#" class="btn btn--small btn--light" data-project="6">View Case Study</a>
+                            </div>
+                        </div>
+                        <div class="portfolio__card-content">
+                            <span class="portfolio__card-category">UX Design</span>
+                            <h3 class="portfolio__card-title">User Research Case Study</h3>
+                            <p class="portfolio__card-description">
+                                Comprehensive user research project including interviews,
+                                surveys, persona development, and journey mapping.
+                            </p>
+                            <div class="portfolio__card-tags">
+                                <span class="tag">User Research</span>
+                                <span class="tag">Personas</span>
+                                <span class="tag">Journey Maps</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Get to Know Me</span>
+                    <h2 class="section__title">About</h2>
+                </div>
+
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__intro">
+                            I'm passionate about the intersection of <strong>social work</strong>,
+                            <strong>design</strong>, and <strong>technology</strong>. My unique background
+                            allows me to approach problems with both analytical rigor and deep empathy
+                            for the human experience.
+                        </p>
+                        <p>
+                            Currently pursuing my MSW at Boston College, I bring together experiences
+                            from customer success, instructional design, UX research, and tech ethics.
+                            I believe technology should serve humanity, not the other way around.
+                        </p>
+                        <p>
+                            My work with Jonathan Haidt as a freelance editor on topics of digital
+                            wellbeing has reinforced my commitment to ethical, human-centered design.
+                            I strive to create experiences that are not only functional and beautiful
+                            but also mindful of their impact on users' lives.
+                        </p>
+                    </div>
+
+                    <div class="about__recognition">
+                        <blockquote class="testimonial">
+                            <p class="testimonial__text">"Super-editor"</p>
+                            <cite class="testimonial__author">— Jonathan Haidt, Recognition for Editorial Work</cite>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="about__timeline">
+                    <h3 class="about__section-title">My Journey</h3>
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <span class="timeline__date">Current</span>
+                                <h4 class="timeline__title">MSW Student</h4>
+                                <p class="timeline__place">Boston College</p>
+                                <p class="timeline__description">
+                                    Pursuing a Master of Social Work degree, focusing on clinical practice
+                                    and the intersection of mental health and technology.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <span class="timeline__date">Recent</span>
+                                <h4 class="timeline__title">Instructional Designer</h4>
+                                <p class="timeline__place">Bay Cove Human Services</p>
+                                <p class="timeline__description">
+                                    Designed learning databases and mentorship programs to enhance
+                                    employee training and professional development.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <span class="timeline__date">Previous</span>
+                                <h4 class="timeline__title">Customer Success</h4>
+                                <p class="timeline__place">Comscore</p>
+                                <p class="timeline__description">
+                                    Built client relationships and ensured customer satisfaction
+                                    in the data analytics industry.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <span class="timeline__date">Education</span>
+                                <h4 class="timeline__title">B.A. Digital Media Design & Communication</h4>
+                                <p class="timeline__place">University of Connecticut — GPA: 3.9</p>
+                                <p class="timeline__description">
+                                    Dual degree combining creative design skills with strategic
+                                    communication expertise.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__skills">
+                    <h3 class="about__section-title">Skills & Tools</h3>
+                    <div class="skills__grid">
+                        <div class="skills__category">
+                            <h4 class="skills__category-title">Design Tools</h4>
+                            <div class="skills__list">
+                                <div class="skill">
+                                    <span class="skill__name">Adobe Creative Cloud</span>
+                                    <div class="skill__bar">
+                                        <div class="skill__progress" data-progress="90"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill__name">Figma</span>
+                                    <div class="skill__bar">
+                                        <div class="skill__progress" data-progress="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill__name">WordPress</span>
+                                    <div class="skill__bar">
+                                        <div class="skill__progress" data-progress="80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill__name">Canva</span>
+                                    <div class="skill__bar">
+                                        <div class="skill__progress" data-progress="95"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__category">
+                            <h4 class="skills__category-title">Project Management</h4>
+                            <div class="skills__list">
+                                <div class="skill">
+                                    <span class="skill__name">Jira</span>
+                                    <div class="skill__bar">
+                                        <div class="skill__progress" data-progress="80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill__name">Confluence</span>
+                                    <div class="skill__bar">
+                                        <div class="skill__progress" data-progress="75"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill__name">Trello</span>
+                                    <div class="skill__bar">
+                                        <div class="skill__progress" data-progress="90"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__category">
+                            <h4 class="skills__category-title">Data & Research</h4>
+                            <div class="skills__list">
+                                <div class="skill">
+                                    <span class="skill__name">Jamovi / SPSS</span>
+                                    <div class="skill__bar">
+                                        <div class="skill__progress" data-progress="70"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill__name">Excel</span>
+                                    <div class="skill__bar">
+                                        <div class="skill__progress" data-progress="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill__name">User Research</span>
+                                    <div class="skill__bar">
+                                        <div class="skill__progress" data-progress="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__credentials">
+                    <h3 class="about__section-title">Credentials</h3>
+                    <div class="credentials__grid">
+                        <div class="credential">
+                            <div class="credential__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="8" r="6"></circle>
+                                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                </svg>
+                            </div>
+                            <h4 class="credential__title">Google UX Design Certificate</h4>
+                            <p class="credential__issuer">Google</p>
+                        </div>
+                        <div class="credential">
+                            <div class="credential__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                            </div>
+                            <h4 class="credential__title">MSW (In Progress)</h4>
+                            <p class="credential__issuer">Boston College</p>
+                        </div>
+                        <div class="credential">
+                            <div class="credential__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 20h9"></path>
+                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="credential__title">iPEC Coaching Course</h4>
+                            <p class="credential__issuer">iPEC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Let's Connect</span>
+                    <h2 class="section__title">Contact</h2>
+                    <p class="section__description">
+                        I'd love to hear from you. Whether you have a project in mind,
+                        a question, or just want to say hello!
+                    </p>
+                </div>
+
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact__details">
+                                <h4 class="contact__label">Email</h4>
+                                <a href="mailto:grace.coll99@gmail.com" class="contact__link">
+                                    grace.coll99@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact__details">
+                                <h4 class="contact__label">LinkedIn</h4>
+                                <a href="https://linkedin.com/in/grace-coll/" target="_blank" rel="noopener noreferrer" class="contact__link">
+                                    linkedin.com/in/grace-coll
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact__details">
+                                <h4 class="contact__label">Location</h4>
+                                <p class="contact__text">Boston Area, MA</p>
+                            </div>
+                        </div>
+
+                        <a href="assets/Grace_Coll_Resume.pdf" download class="btn btn--primary btn--download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Resume
+                        </a>
+                    </div>
+
+                    <form class="contact__form" id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Name</label>
+                            <input type="text" id="name" name="name" class="form__input" required placeholder="Your name" autocomplete="name">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input type="email" id="email" name="email" class="form__input" required placeholder="your@email.com" autocomplete="email">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="subject" class="form__label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form__input" required placeholder="What's this about?">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message</label>
+                            <textarea id="message" name="message" class="form__textarea" required placeholder="Your message..." rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">
+                            Send Message
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copyright">
+                    &copy; <span id="current-year"></span> Grace Coll. All rights reserved.
+                </p>
+                <div class="footer__social">
+                    <a href="https://linkedin.com/in/grace-coll/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:grace.coll99@gmail.com" class="footer__social-link" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal__overlay" aria-hidden="true"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal__body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
