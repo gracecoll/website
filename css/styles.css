@@ -306,6 +306,11 @@ button {
     letter-spacing: -0.02em;
 }
 
+.logo-image {
+    height: 40px;
+    width: auto;
+}
+
 .nav__menu {
     display: flex;
     align-items: center;
