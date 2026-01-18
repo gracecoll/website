@@ -4,7 +4,8 @@
       "Bash(open:*)",
       "Bash(git push)",
       "Bash(git add:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nReplace GC text logo with custom logo image\n\n- Added logo.png to assets folder\n- Updated header to use image instead of text\n- Added CSS styling for the logo image\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nReplace GC text logo with custom logo image\n\n- Added logo.png to assets folder\n- Updated header to use image instead of text\n- Added CSS styling for the logo image\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
     ]
   }
 }
