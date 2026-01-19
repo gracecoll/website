@@ -684,8 +684,14 @@ button {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(124, 106, 156, 0.1) 0%, rgba(90, 143, 156, 0.1) 100%);
-    z-index: 0;
+    background: linear-gradient(135deg, rgba(45, 105, 239, 0.25) 0%, rgba(143, 54, 135, 0.3) 100%);
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity var(--transition-base);
+}
+
+.portfolio__card:hover .portfolio__card-image::before {
+    opacity: 0.5;
 }
 
 .portfolio__card:hover .portfolio__card-image img {

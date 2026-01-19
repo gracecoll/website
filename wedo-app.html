@@ -29,6 +29,15 @@
             margin-top: var(--header-height);
         }
 
+        .case-study-header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(45, 105, 239, 0.25) 0%, rgba(143, 54, 135, 0.3) 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
         .case-study-header::after {
             content: '';
             position: absolute;
@@ -37,6 +46,7 @@
             right: 0;
             height: 50%;
             background: linear-gradient(to top, var(--color-bg), transparent);
+            z-index: 2;
         }
 
         .case-study-header h1 {
