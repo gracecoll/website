@@ -20,12 +20,23 @@
     <style>
         .case-study-header {
             width: 100%;
-            padding: var(--space-4xl) var(--space-xl);
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            height: 60vh;
+            min-height: 400px;
+            background-image: url('assets/we-do.png');
+            background-size: cover;
+            background-position: center;
             position: relative;
             margin-top: var(--header-height);
-            text-align: center;
-            color: white;
+        }
+
+        .case-study-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(to top, var(--color-bg), transparent);
         }
 
         .case-study-header h1 {
@@ -265,10 +276,7 @@
     </header>
 
     <main>
-        <div class="case-study-header">
-            <h1>WeDo</h1>
-            <p>An affordable wedding planning mobile app</p>
-        </div>
+        <div class="case-study-header"></div>
 
         <div class="case-study-content">
             <a href="index.html#portfolio" class="back-link">
