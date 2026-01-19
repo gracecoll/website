@@ -1,10 +1,11 @@
 [
   {
     "slug": "welcome",
-    "title": "Welcome to My Blog",
+    "title": "Exposure Therapy: Free Medicine in a World of Digital Addiction",
     "date": "2026-01-19",
-    "excerpt": "An introduction to my blog where I'll be sharing thoughts on UX design, tech ethics, instructional design, and the intersection of technology and human wellbeing.",
+    "excerpt": "Exploring the therapeutic power of exposure therapy and how it offers a path to healing in our increasingly screen-saturated world.",
     "image": "",
-    "tags": ["Announcement", "Welcome"]
+    "tags": ["Tech Ethics", "Mental Health"],
+    "googleDocUrl": "https://docs.google.com/document/d/1CKq8qW6FV_HtkfwKYa17CJqtOrc_1JPjTlBNwn4n8dg/edit?usp=sharing"
   }
 ]

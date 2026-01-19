@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     setCurrentYear();
     initFadeAnimations();
+    initBlogCarousel();
 });
 
 /**
@@ -108,6 +109,8 @@ function initScrollEffects() {
         .section__header,
         .portfolio__filters,
         .portfolio__card,
+        .blog-carousel,
+        .blog-preview__cta,
         .about__text,
         .about__recognition,
         .about__timeline,
@@ -639,6 +642,54 @@ function initFadeAnimations() {
             element.classList.add('visible');
         });
     }, 100);
+}
+
+/**
+ * Blog carousel functionality
+ * - Handles horizontal scrolling of blog preview cards
+ */
+function initBlogCarousel() {
+    const track = document.getElementById('blog-carousel-track');
+    const prevBtn = document.querySelector('.blog-carousel__btn--prev');
+    const nextBtn = document.querySelector('.blog-carousel__btn--next');
+
+    if (!track || !prevBtn || !nextBtn) return;
+
+    const scrollAmount = 320; // Approximate card width + gap
+
+    // Update button states based on scroll position
+    function updateButtons() {
+        const scrollLeft = track.scrollLeft;
+        const maxScroll = track.scrollWidth - track.clientWidth;
+
+        prevBtn.disabled = scrollLeft <= 0;
+        nextBtn.disabled = scrollLeft >= maxScroll - 10; // Small buffer for rounding
+    }
+
+    // Scroll left
+    prevBtn.addEventListener('click', () => {
+        track.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    // Scroll right
+    nextBtn.addEventListener('click', () => {
+        track.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    // Update buttons on scroll
+    track.addEventListener('scroll', debounce(updateButtons, 50));
+
+    // Initial button state
+    updateButtons();
+
+    // Update on window resize
+    window.addEventListener('resize', throttle(updateButtons, 100));
 }
 
 /**

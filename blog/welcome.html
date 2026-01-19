@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my blog - An introduction to my writing about UX design, tech ethics, and the intersection of technology and human wellbeing.">
+    <meta name="description" content="Exposure Therapy: Free Medicine in a World of Digital Addiction - Exploring the therapeutic power of exposure therapy in our screen-saturated world.">
     <meta name="keywords" content="Grace Coll, Blog, UX Design, Tech Ethics, Social Work, Introduction">
     <meta name="author" content="Grace Coll">
 
-    <title>Welcome to My Blog | Grace Coll</title>
+    <title>Exposure Therapy: Free Medicine in a World of Digital Addiction | Grace Coll</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,6 +131,56 @@
             color: var(--color-primary-dark);
         }
 
+        /* Google Doc Embed Styles */
+        .google-doc-embed {
+            margin: var(--space-xl) 0;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            background: var(--color-surface);
+        }
+
+        .google-doc-embed iframe {
+            width: 100%;
+            height: 80vh;
+            min-height: 600px;
+            border: none;
+            display: block;
+        }
+
+        .google-doc-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--space-md) var(--space-lg);
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+        }
+
+        .google-doc-header span {
+            font-size: var(--text-sm);
+            font-weight: 500;
+        }
+
+        .google-doc-header a {
+            color: white;
+            font-size: var(--text-sm);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            transition: opacity var(--transition-fast);
+        }
+
+        .google-doc-header a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .google-doc-embed iframe {
+                height: 60vh;
+                min-height: 400px;
+            }
+        }
+
         .blog-post-content img {
             max-width: 100%;
             height: auto;
@@ -251,67 +301,37 @@
                     <div class="blog-post-meta">
                         <span class="blog-post-date">January 19, 2026</span>
                         <div class="blog-post-tags">
-                            <span class="tag">Announcement</span>
-                            <span class="tag">Welcome</span>
+                            <span class="tag">Tech Ethics</span>
+                            <span class="tag">Mental Health</span>
                         </div>
                     </div>
 
-                    <h1 class="blog-post-title">Welcome to My Blog</h1>
+                    <h1 class="blog-post-title">Exposure Therapy: Free Medicine in a World of Digital Addiction</h1>
                 </div>
             </header>
 
             <div class="blog-post-content">
                 <p>
-                    Welcome! I'm excited to launch this blog as a space to share my thoughts on
-                    topics I'm passionate about: UX design, tech ethics, instructional design, and
-                    the intersection of technology and human wellbeing.
+                    Welcome to my blog! Below you'll find my latest thoughts and reflections.
+                    I'll be sharing my writing through Google Docs so you can easily read and follow along.
                 </p>
 
-                <h2>Why I'm Starting This Blog</h2>
+                <div class="google-doc-embed">
+                    <div class="google-doc-header">
+                        <span>Blog Post</span>
+                        <a href="https://docs.google.com/document/d/1CKq8qW6FV_HtkfwKYa17CJqtOrc_1JPjTlBNwn4n8dg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Open in Google Docs</a>
+                    </div>
+                    <iframe
+                        src="https://docs.google.com/document/d/1CKq8qW6FV_HtkfwKYa17CJqtOrc_1JPjTlBNwn4n8dg/preview"
+                        title="Blog Post - Google Doc"
+                        allow="autoplay"
+                        loading="lazy">
+                    </iframe>
+                </div>
 
                 <p>
-                    Throughout my journey from digital media design to pursuing a Master of Social Work,
-                    I've found myself at a unique intersection of disciplines. My work with Jonathan Haidt
-                    on <em>The Anxious Generation</em>, my experience building learning systems for
-                    human service workers, and my clinical training have all given me perspectives
-                    I want to explore and share.
-                </p>
-
-                <p>
-                    This blog will be a place to think out loud about:
-                </p>
-
-                <ul>
-                    <li><strong>UX Design</strong> - User research methods, accessibility, and designing with intention</li>
-                    <li><strong>Tech Ethics</strong> - How technology shapes our lives and wellbeing</li>
-                    <li><strong>Instructional Design</strong> - Building effective learning experiences</li>
-                    <li><strong>The Human Side of Tech</strong> - Bringing clinical insights to design work</li>
-                </ul>
-
-                <h2>What to Expect</h2>
-
-                <p>
-                    I plan to write about case studies from my work, reflections on readings and research,
-                    and practical insights that might be useful for others working in these spaces.
-                    My goal is to bridge the gap between academic research and practical application.
-                </p>
-
-                <blockquote>
-                    <p>
-                        "The best design serves the greater good—not just usability metrics."
-                    </p>
-                </blockquote>
-
-                <h2>Let's Connect</h2>
-
-                <p>
-                    I'd love to hear from you. If you're working on similar problems or have
-                    thoughts on any topics I write about, please <a href="../index.html#contact">reach out</a>.
-                    The best ideas come from conversation and collaboration.
-                </p>
-
-                <p>
-                    Thanks for being here. I'm looking forward to sharing this journey with you.
+                    I'd love to hear your thoughts! If you have any questions or want to discuss
+                    any of the topics I write about, please <a href="../index.html#contact">reach out</a>.
                 </p>
             </div>
 
