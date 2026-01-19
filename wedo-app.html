@@ -250,69 +250,42 @@
             margin: var(--space-2xl) 0;
         }
 
-        .iphone-frame {
+        .prototype-container {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: var(--space-xl) auto;
+            padding: var(--space-xl);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: var(--radius-lg);
         }
 
-        .iphone-device {
-            position: relative;
-            width: 350px;
-            height: 716px;
-            background: #1a1a1a;
-            border-radius: 50px;
-            padding: 12px;
-            box-shadow:
-                0 0 0 3px #1a1a1a,
-                0 0 0 6px #333,
-                0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        }
-
-        .iphone-device::before {
-            content: '';
-            position: absolute;
-            top: 12px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 120px;
-            height: 28px;
-            background: #1a1a1a;
-            border-radius: 0 0 20px 20px;
-            z-index: 10;
-        }
-
-        .iphone-screen {
-            width: 100%;
-            height: 100%;
+        .prototype-frame {
+            width: 375px;
+            height: 812px;
             background: #fff;
-            border-radius: 40px;
+            border-radius: 24px;
             overflow: hidden;
+            box-shadow:
+                0 25px 50px -12px rgba(0, 0, 0, 0.4),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
         }
 
-        .iphone-screen iframe {
+        .prototype-frame iframe {
             width: 100%;
             height: 100%;
             border: none;
         }
 
         @media (max-width: 480px) {
-            .iphone-device {
-                width: 290px;
-                height: 594px;
-                border-radius: 42px;
-                padding: 10px;
+            .prototype-container {
+                padding: var(--space-md);
             }
 
-            .iphone-device::before {
-                width: 100px;
-                height: 24px;
-                border-radius: 0 0 16px 16px;
-            }
-
-            .iphone-screen {
-                border-radius: 34px;
+            .prototype-frame {
+                width: 100%;
+                max-width: 320px;
+                height: 693px;
             }
         }
     </style>
@@ -434,11 +407,9 @@
                 as if you were using the app on your phone.
             </p>
             <div class="prototype-section">
-                <div class="iphone-frame">
-                    <div class="iphone-device">
-                        <div class="iphone-screen">
-                            <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F3smerw1MIZ3NNCyZlHmpKL%2FGoogle-Coursera-Course-Projects%3Ftype%3Ddesign%26node-id%3D166-32433%26t%3DHPHGbGzVGcNGZ8iT-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D166%253A32433%26mode%3Ddesign" allowfullscreen></iframe>
-                        </div>
+                <div class="prototype-container">
+                    <div class="prototype-frame">
+                        <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F3smerw1MIZ3NNCyZlHmpKL%2FGoogle-Coursera-Course-Projects%3Ftype%3Ddesign%26node-id%3D166-32433%26t%3DHPHGbGzVGcNGZ8iT-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D166%253A32433%26mode%3Ddesign" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
