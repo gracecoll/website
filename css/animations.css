@@ -199,33 +199,30 @@
     transform: translateX(0);
 }
 
-.about__recognition {
+.about__image {
     opacity: 0;
-    transform: translateX(50px);
-    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0.2s;
+    transform: translateX(60px) translateY(20px);
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.3s;
 }
 
-.about__recognition.visible {
+.about__image.visible {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) translateY(0);
 }
 
-.testimonial {
-    position: relative;
+/* Generic fade-in-slide animation class */
+.fade-in-slide {
+    opacity: 0;
+    transform: translateX(60px) translateY(20px);
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.testimonial::before {
-    content: '"';
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    font-family: var(--font-heading);
-    font-size: 80px;
-    color: var(--color-primary);
-    opacity: 0.15;
-    line-height: 1;
+.fade-in-slide.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
 }
 
 /* ===================================
@@ -620,11 +617,12 @@ body {
     .float-in-left,
     .float-in-right,
     .float-in-scale,
+    .fade-in-slide,
     .section__header,
     .portfolio__filters,
     .portfolio__card,
     .about__text,
-    .about__recognition,
+    .about__image,
     .about__timeline,
     .about__skills,
     .about__credentials,
