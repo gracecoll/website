@@ -985,31 +985,18 @@ button {
     color: var(--color-primary);
 }
 
-.about__recognition {
+.about__image {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.testimonial {
-    padding: var(--space-xl);
-    background: var(--color-surface);
+.about__image img {
+    max-width: 100%;
+    max-height: 400px;
     border-radius: var(--radius-lg);
-    border-left: 4px solid var(--color-primary);
-    box-shadow: var(--shadow-md);
-}
-
-.testimonial__text {
-    font-family: var(--font-heading);
-    font-size: var(--text-2xl);
-    font-style: italic;
-    color: var(--color-text);
-    margin-bottom: var(--space-md);
-}
-
-.testimonial__author {
-    font-size: var(--text-sm);
-    color: var(--color-text-light);
-    font-style: normal;
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
 }
 
 .about__section-title {
