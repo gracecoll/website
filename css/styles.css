@@ -712,6 +712,7 @@ button {
     background: rgba(45, 52, 54, 0.7);
     opacity: 0;
     transition: opacity var(--transition-base);
+    z-index: 10;
 }
 
 .portfolio__card:hover .portfolio__card-overlay {
