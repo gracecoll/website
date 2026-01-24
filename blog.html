@@ -47,8 +47,7 @@
 
         .blog__card-image {
             position: relative;
-            aspect-ratio: 16/10;
-            overflow: hidden;
+            padding: var(--space-md);
             background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary-light) 100%);
         }
 
@@ -64,9 +63,7 @@
         }
 
         .blog__card-date {
-            position: absolute;
-            top: var(--space-md);
-            left: var(--space-md);
+            display: inline-block;
             padding: var(--space-xs) var(--space-sm);
             background: var(--color-surface);
             color: var(--color-primary);
