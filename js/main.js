@@ -634,7 +634,7 @@ function setCurrentYear() {
  * Initialize fade-in animations on page load
  */
 function initFadeAnimations() {
-    const fadeElements = document.querySelectorAll('.fade-in');
+    const fadeElements = document.querySelectorAll('.fade-in, .fade-in-slide');
 
     // Trigger animations after a brief delay
     setTimeout(() => {
