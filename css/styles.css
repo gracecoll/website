@@ -1507,14 +1507,35 @@ button {
     .hero__content {
         max-width: 100%;
         order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__title--handwritten {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Disable typewriter animation on mobile - show full text immediately */
+    .typewriter-gradient {
+        width: auto;
+        overflow: visible;
+        white-space: normal;
+        animation: blink 0.75s step-end infinite,
+                   gradientShift 4s ease-in-out infinite;
     }
 
     .hero__image {
         order: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .hero__image-wrapper {
         max-width: 300px;
+        margin: 0 auto;
     }
 
     .hero__subtitle {
@@ -1629,12 +1650,6 @@ button {
 
     .skills__grid {
         grid-template-columns: 1fr;
-    }
-
-    /* Allow hero title to wrap on mobile */
-    .typewriter-gradient {
-        white-space: normal;
-        word-wrap: break-word;
     }
 
     .hero__title--handwritten {
