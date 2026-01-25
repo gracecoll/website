@@ -985,6 +985,15 @@ button {
     color: var(--color-primary);
 }
 
+.highlight-blue {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.highlight-blue strong {
+    color: inherit;
+}
+
 .about__image {
     display: flex;
     align-items: center;
