@@ -636,9 +636,12 @@ body {
     .hero__subtitle,
     .hero__description,
     .hero__buttons,
-    .hero__image {
+    .hero__image,
+    .hero-name-animated,
+    .typewriter-gradient {
         opacity: 1;
         transform: none;
+        width: 100%;
     }
 
     .timeline__marker::after,
