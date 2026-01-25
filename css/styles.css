@@ -1606,6 +1606,10 @@ button {
         gap: var(--space-md);
         text-align: center;
     }
+
+    .hero__buttons {
+        margin-bottom: var(--space-2xl);
+    }
 }
 
 @media (max-width: 480px) {
@@ -1616,6 +1620,7 @@ button {
     .hero__buttons {
         flex-direction: column;
         width: 100%;
+        margin-bottom: var(--space-3xl);
     }
 
     .btn {
@@ -1624,6 +1629,16 @@ button {
 
     .skills__grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Allow hero title to wrap on mobile */
+    .typewriter-gradient {
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    .hero__title--handwritten {
+        font-size: clamp(1.75rem, 1.2rem + 3vw, 2.5rem);
     }
 }
 
