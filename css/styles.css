@@ -1515,6 +1515,7 @@ button {
     .hero__title--handwritten {
         width: 100%;
         text-align: center;
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
     }
 
     /* Disable typewriter animation on mobile - show full text immediately */
@@ -1536,6 +1537,11 @@ button {
     .hero__image-wrapper {
         max-width: 300px;
         margin: 0 auto;
+    }
+
+    /* Hide the offset decoration on mobile for proper centering */
+    .hero__image-decoration {
+        display: none;
     }
 
     .hero__subtitle {
