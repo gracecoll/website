@@ -645,7 +645,13 @@ body {
     }
 
     .timeline__marker::after,
-    .credential__icon {
+    .credential__icon,
+    .portfolio__card-image--primary,
+    .portfolio__card-image--secondary,
+    .portfolio__card-image--accent,
+    .portfolio__card-image--dark,
+    .portfolio__card-image--purple,
+    .portfolio__card-image--blue {
         animation: none;
     }
 }

@@ -95,12 +95,12 @@ body {
     background-color: var(--color-bg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%232d69ef' d='M4 0l16 12.279-6.78 1.138 4.256 8.676-3.902 1.907-4.281-8.758-5.293 4.581z'/%3E%3C/svg%3E") 0 0, auto;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%232d69ef' stroke='%232c4172' stroke-width='1.5' d='M4 0l16 12.279-6.78 1.138 4.256 8.676-3.902 1.907-4.281-8.758-5.293 4.581z'/%3E%3C/svg%3E") 0 0, auto;
 }
 
 /* Pointer cursor for interactive elements */
 a, button, [role="button"], input[type="submit"], .btn, .filter-btn, .nav__link, .portfolio__card {
-    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%232d69ef' d='M4 0l16 12.279-6.78 1.138 4.256 8.676-3.902 1.907-4.281-8.758-5.293 4.581z'/%3E%3C/svg%3E") 0 0, pointer;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%232d69ef' stroke='%232c4172' stroke-width='1.5' d='M4 0l16 12.279-6.78 1.138 4.256 8.676-3.902 1.907-4.281-8.758-5.293 4.581z'/%3E%3C/svg%3E") 0 0, pointer;
 }
 
 /* Focus styles for accessibility */
@@ -573,14 +573,33 @@ button {
     max-width: 400px;
 }
 
+.hero__photo-link {
+    display: block;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--shadow-xl);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero__photo-link:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px rgba(45, 105, 239, 0.25);
+}
+
 .hero__photo {
     width: 100%;
     aspect-ratio: 4/5;
     object-fit: cover;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-xl);
-    position: relative;
-    z-index: 1;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.hero__photo-link:hover .hero__photo {
+    filter: brightness(1.05);
 }
 
 .hero__image-decoration {
@@ -715,28 +734,41 @@ button {
 }
 
 /* Card color variants */
+/* ===========================================
+   Portfolio Card Colors
+   Available colors: Blue (#2d69ef), Purple (#8f3687),
+   Dark Blue (#2c4172), Lime (#dae12f), Coral (#ff6c6c)
+   Rule: Adjacent cards should never be the same color
+   =========================================== */
+
+/* Mobile App Design - Blue */
 .portfolio__card-image--primary {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    background: var(--color-primary);
 }
 
+/* Bay Cove Learning Database - Purple */
 .portfolio__card-image--secondary {
-    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
+    background: var(--color-secondary);
 }
 
-.portfolio__card-image--accent {
-    background: linear-gradient(135deg, var(--color-accent) 0%, #e85555 100%);
-}
-
+/* Mentorship Program - Dark Blue */
 .portfolio__card-image--dark {
-    background: linear-gradient(135deg, var(--color-primary-dark) 0%, #1a2d4d 100%);
+    background: var(--color-primary-dark);
 }
 
+/* Marketing Presentations - Lime */
+.portfolio__card-image--accent {
+    background: #dae12f;
+}
+
+/* Digital Wellbeing - Coral */
 .portfolio__card-image--purple {
-    background: linear-gradient(135deg, var(--color-secondary-light) 0%, var(--color-secondary) 100%);
+    background: #ff6c6c;
 }
 
+/* Jon Pousette-Dart - Blue */
 .portfolio__card-image--blue {
-    background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+    background: #2d69ef;
 }
 
 .portfolio__card:hover .portfolio__card-image img {
