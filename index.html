@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- Preload critical hero image for faster LCP -->
+    <link rel="preload" as="image" href="assets/headshot-optimized.jpg">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -79,7 +82,7 @@
                 <div class="hero__image fade-in delay-2">
                     <div class="hero__image-wrapper">
                         <a href="#about" class="hero__photo-link">
-                            <img src="assets/headshot.png" alt="Grace Coll - Professional headshot" class="hero__photo">
+                            <img src="assets/headshot-optimized.jpg" alt="Grace Coll - Professional headshot" class="hero__photo" width="540" height="700" fetchpriority="high">
                         </a>
                         <div class="hero__image-decoration"></div>
                     </div>
@@ -382,7 +385,7 @@
                     </div>
 
                     <div class="about__image fade-in-slide delay-2">
-                        <img src="assets/about.png" alt="Grace Coll after completing the Boston Triathlon" loading="lazy">
+                        <img src="assets/about-optimized.jpg" alt="Grace Coll after completing the Boston Triathlon" loading="lazy" width="600" height="600">
                     </div>
                 </div>
 
