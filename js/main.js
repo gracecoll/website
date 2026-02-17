@@ -112,6 +112,7 @@ function initScrollEffects() {
         .blog-carousel,
         .blog-preview__cta,
         .about__text,
+        .about__image,
         .about__recognition,
         .about__timeline,
         .about__skills,
