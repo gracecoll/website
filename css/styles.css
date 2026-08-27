@@ -595,11 +595,12 @@ button {
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-xl);
     display: block;
+    filter: grayscale(100%) brightness(1.1);
     transition: filter 0.3s ease;
 }
 
 .hero__photo-link:hover .hero__photo {
-    filter: brightness(1.05);
+    filter: grayscale(100%) brightness(1.2);
 }
 
 .hero__image-decoration {
